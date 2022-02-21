@@ -61,11 +61,18 @@ function initialize(grid::Matrix{Bool})
 end
 
 """
-    initialize(source::AbstractString)
+    initialize(source::AbstractString; flip=true)
 
-Initialize the ABM with a given file.
+Initialize the ABM with a given file. `flip=true` flips the y-axis and does a
+transpose if desired which may be useful when being displayed in plots.
 """
-initialize(source::AbstractString) = initialize(readdlm(source, Bool))
+function initialize(source::AbstractString; flip=true)
+	grid = readdlm(source, Bool)
+	if flip
+		reverse!(grid; dims=1)
+	end
+	initialize(collect(grid'))
+end
 
 """
     alive_neighbors(agent, model)
