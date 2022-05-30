@@ -4,7 +4,7 @@ Learning how agent based modelling works using [Agents.jl](https://github.com/Ju
 
 https://user-images.githubusercontent.com/81660172/154884781-c6c7e147-a00a-4806-a741-a3a3f448420c.mp4
 
-This was based on the [Schelling's segregation model](https://juliadynamics.github.io/Agents.jl/stable/examples/schelling/) tutorial since I did not realize the [Conway's game of life](https://juliadynamics.github.io/Agents.jl/stable/examples/game_of_life_2D_CA/) tutorial existed until after I made this.
+This was based on the [Schelling's segregation model](https://juliadynamics.github.io/Agents.jl/stable/examples/schelling/) tutorial since I did not realize the [Conway's game of life](https://juliadynamics.github.io/AgentsExampleZoo.jl/dev/examples/game_of_life_2D_CA/) tutorial existed until after I made this.
 
 The `gameoflife.jl` file contains the main game of life code. The notebook file is a [Pluto notebook](https://github.com/fonsp/Pluto.jl) for testing and making an mp4. 
 
